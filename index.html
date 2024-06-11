@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHAHZAIN ACademy</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+  <div id="page1">
+    <div id="nav">
+      <div class="left"><img src="acdemylogo.png" alt=""></div>
+      <div class="mid">SHAHZAIN ACADEMY</div>
+      <div class="right"> <i class="ri-menu-3-line"></i></div>
+    </div>
+    <div id="section1">
+      <div id="cont">
+        <div class="left"><h1>Shahzain Academy of Sciences</h1><p>The Shahzain Academy of Sciences offers MSc programs in Mathematics, Physics, and Chemistry, focusing on advanced education and research. Renowned for academic excellence, the academy prepares students for scientific careers through rigorous coursework and innovative research opportunities.</p></div>
+        <div class="right"><img src="acdemylogo.png" alt=""></div>
+      </div>
+    </div>
+    <div id="hbsc">
+     <div class="left"><ul>
+      <li><a href="">Home</a></li>
+      <li><a href="About">About</a></li>
+      <li><a href="">Contact us</a></li>
+    </ul></div>
+     <div class="right"><i class="ri-close-large-line"></i></div>
+    </div>
+  </div>
+  <div id="page2">
+    <div id="boxcont">
+      <div id="box1">
+        <div class="lefts">
+          <img src="papa.jpg" alt="">
+        </div>
+        <div class="rights">
+          <h1> Nadeem Iqbal</h1>
+          Nadeem Iqbal, an exceptional teacher, instructs students in Mathematics and Physics from 9th grade to MSc level. Known for his deep knowledge and engaging teaching methods, he inspires students to excel in these challenging subjects.
+        </div>
+      </div>
+      <div id="box2">
+        <div class="rights">
+          <h1> Amir Mansoor Elahi</h1>
+          Amir Mansoor Elahi, with an MPhil in Chemistry, teaches students from 9th grade to MSc level. Renowned for his expertise and dynamic teaching style, he inspires a deep understanding and passion for Chemistry among his students.
+        </div>
+        <div class="lefts">
+          <img src="uncle amir.jpg" alt="">
+        </div>
+    </div>
+    </div>
+    
+  <div id="page3">
+
+    <div id="page3cont">
+      <div class="head"><h1>Discover Events at Shahzain Academy</h1></div>
+    <div class="contents">
+      <div class="item1"><img src="3.jpg" alt=""></div>
+      <div class="item2"><img src="2.jpg" alt=""></div>
+      <div class="item3"><img src="1.jpg" alt=""></div>
+      <div class="item4"><img src="4.jpg" alt=""></div>
+      <div class="item5"><img src="5.jpg" alt=""></div>
+      <div class="item6"><img src="1.jpg" alt=""></div>
+      <div class="item7"><img src="2.jpg" alt=""></div>
+      <div class="item8"><img src="3.jpg" alt=""></div>
+    </div>
+    <div class="footer"><h1>@copywrite This WEbsite is made by SHAHZAIN</h1></div>
+    </div>
+  </div>
+  <!-- Always get the latest version -->
+<!-- Not recommended for production sites! -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get minor updates and patch fixes within a major version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get patch fixes within a minor version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get a specific version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="path/to/smooth-scroll.polyfills.min.js"></script>
+  <script src="js.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+</body>
+</html>
